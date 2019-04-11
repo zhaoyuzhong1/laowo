@@ -1,5 +1,7 @@
 package com.lw.dto;
 
+import java.util.Date;
+
 /**
  * Created by Administrator on 2019/4/10/010.
  */
@@ -7,7 +9,7 @@ public class Conpon extends BaseDTO {
     private Integer id;
     private String couponid;
     private String isuse;
-    private String createdate;
+    private Date createdate;
     private String expdate;
     private String getmethod;
 
@@ -35,11 +37,11 @@ public class Conpon extends BaseDTO {
         this.isuse = isuse;
     }
 
-    public String getCreatedate() {
+    public Date getCreatedate() {
         return createdate;
     }
 
-    public void setCreatedate(String createdate) {
+    public void setCreatedate(Date createdate) {
         this.createdate = createdate;
     }
 
