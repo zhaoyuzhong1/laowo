@@ -24,6 +24,14 @@ public class GoodsDao {
         return baseDao.query(sql,Goods.class,new Object[]{});
     }
 
+    //保存商品
+    public int insGoods (Goods goods) {
+        StringBuffer sql =new StringBuffer();
+        sql.append(" insert into goods (title,titlesub,price,priceold,pic) \n" +
+                "values(:title,:titlesub,:price,:priceold,:pic) ");
+        return baseDao.insert(sql.toString(),goods);
+    }
+
 
 
 }
