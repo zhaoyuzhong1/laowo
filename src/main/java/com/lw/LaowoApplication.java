@@ -1,7 +1,9 @@
 package com.lw;
 
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -12,7 +14,7 @@ import org.springframework.web.filter.CorsFilter;
 import javax.sql.DataSource;
 
 @SpringBootApplication
-public class LaowoApplication extends SpringBootServletInitializer{
+public class LaowoApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LaowoApplication.class, args);
